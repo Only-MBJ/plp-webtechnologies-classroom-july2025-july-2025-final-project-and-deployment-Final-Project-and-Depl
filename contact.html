@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MyPortfolio</a>
+      <button id="nav-toggle-4" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" id="site-nav-4">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact">
+      <h1>Contact</h1>
+      <p>Send a message — client-side validation included.</p>
+
+      <form id="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" id="name" required minlength="2" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" id="message" rows="6" required minlength="10"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="button">Send Message</button>
+        </div>
+
+        <p id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-4"></span> MyPortfolio</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

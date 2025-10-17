@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MyPortfolio</a>
+      <button id="nav-toggle-3" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" id="site-nav-3">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="services">
+      <h1>Services</h1>
+      <p>I provide end-to-end front-end development and UI design services.</p>
+
+      <div class="grid services-grid">
+        <div class="service-card">
+          <h3>UI Design</h3>
+          <p>Design systems, prototypes, and UI components.</p>
+          <button class="toggle-details">More</button>
+          <div class="details" hidden>
+            <p>Figma, prototyping, accessible design guidelines.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Front-end Dev</h3>
+          <p>Responsive websites and SPA development.</p>
+          <button class="toggle-details">More</button>
+          <div class="details" hidden>
+            <p>HTML, CSS, JavaScript — optimized and tested.</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <h3>Performance & SEO</h3>
+          <p>Improve load times and search visibility.</p>
+          <button class="toggle-details">More</button>
+          <div class="details" hidden>
+            <p>Audits, lazy loading, asset optimization.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-3"></span> MyPortfolio • <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

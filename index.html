@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MyPortfolio</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Build modern, responsive web experiences</h1>
+          <p>Design • Develop • Deploy — I craft interfaces that delight and perform.</p>
+          <div class="hero-cta">
+            <a href="services.html" class="button">See Services</a>
+            <a href="contact.html" class="button ghost">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card featured-card" data-project="Project A" tabindex="0">
+            <img src="images/placeholder-1.jpg" alt="Project thumbnail">
+            <div class="card-body">
+              <h3>Project A</h3>
+              <p>Interactive UI with animations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects container">
+      <h2>Featured projects</h2>
+      <div class="grid projects-grid">
+        <article class="project" data-full="images/placeholder-1.jpg">
+          <img src="images/placeholder-1.jpg" alt="Project 1">
+          <h3>Interactive Dashboard</h3>
+          <p>Dashboard with charts and filters.</p>
+          <button class="view-btn" data-src="images/placeholder-1.jpg">View</button>
+        </article>
+        <article class="project" data-full="images/placeholder-2.jpg">
+          <img src="images/placeholder-2.jpg" alt="Project 2">
+          <h3>Landing Page</h3>
+          <p>Conversion-focused landing page.</p>
+          <button class="view-btn" data-src="images/placeholder-2.jpg">View</button>
+        </article>
+        <article class="project" data-full="images/placeholder-3.jpg">
+          <img src="images/placeholder-3.jpg" alt="Project 3">
+          <h3>Microinteractions</h3>
+          <p>Small animations, big UX impact.</p>
+          <button class="view-btn" data-src="images/placeholder-3.jpg">View</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MyPortfolio • <a href="about.html">About</a> • <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <!-- Modal for viewing images -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lb-close" class="lb-close" aria-label="Close">✕</button>
+    <img id="lb-img" src="" alt="Preview">
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
